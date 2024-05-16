@@ -96,21 +96,50 @@
                     <div class="result-label">Public-HL</div>
                     <div class="result">12  </div>
                 </div>
-                <div class="more-details">
-                    <img src="Icons/down.png" alt="">
+                <div class="more-details" onclick="toggleNestedTable()">
+                    <img src="Icons/more.png" alt="">
                 </div>
 
             </div>
-    
-            <!-- <div class="more-details">
-                <img src="Icons/down.png" alt="">
-            </div> -->
-
-
         </div>
-
-       
-
     </div>
+
+    <div class="nested-table-details">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Quantite</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                    <td>Data 4</td>
+                    <td>
+                        <button class="detail-action valid-action">Valid</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data 6</td>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
+                    <td>Data 9</td>
+                    <td>
+                        <button class="detail-action ignore-action">Ignore</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="code.js"></script>
 </body>
 </html>
