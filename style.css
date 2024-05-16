@@ -25,6 +25,7 @@
 .f-container {
     margin: 30px auto;
     width: 1250px;
+    width: 1250px;
     height: auto;
     background-color: var(--primary-bg);
     /* box-shadow:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
@@ -77,6 +78,8 @@
 }
 
 .more-details img {
+    width: 30px;
+    height: 30px;
     width: 30px;
     height: 30px;
 }
@@ -259,6 +262,18 @@ td {
 .ignore-action {
     background-color: var(--ignore);
     color: var(--bg-white); 
+    align-self: center;
+}
+
+
+/*Details report*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2% auto;
+    width: 1000px;
+    border-bottom: 1px solid var(--card-color);
 }
 
 
@@ -273,4 +288,49 @@ td {
 
 .status-text { 
     font-size: .8rem;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--card-color);
+    text-align: center; 
+}
+th {
+    background-color: var(--card-color);
+    font-size: var(--s-size);
+}
+
+td {
+    font-size: var(--t-size);
+}
+
+.detail-action {
+    padding: 8px 15px;
+    width: 100px;
+    border-radius: 10px;
+    border: var(--bg-white) 1px solid;
+}
+
+.valid-action {
+    background-color: var(--success);
+    color: var(--bg-white); 
+}
+
+.suspend-action {
+    background-color: var(--warning);
+    color: var(--bg-white); 
+}
+
+.return-action {
+    background-color: var(--primary);
+    color: var(--bg-white); 
+}
+.reject-action {
+    background-color: var(--danger);
+    color: var(--bg-white); 
+}
+
+.ignore-action {
+    background-color: var(--ignore);
+    color: var(--bg-white); 
 }
